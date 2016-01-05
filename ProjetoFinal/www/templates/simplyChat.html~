@@ -1,0 +1,27 @@
+<ion-view title="Simply Chat">
+    <ion-content overflow-scroll="true" padding="false" style="background: url(img/DqNYHDkxT3mD3s9GX5rs_1337093.jpg) no-repeat center;" scroll="false">
+        <div class="spacer" style="width: 100%; height: 30%;"></div>
+        <form class="list" name="myForm" ng-submit="goToPage()" novalidate>
+            <label class="item item-input">
+                <input ng-model="usuario.email" type="text" placeholder="Email" name="email" required>
+                <span style="color:red" ng-show="myForm.email.$error.required">
+  						Insira o email.
+  					 </span>
+            </label>
+            <label class="item item-input">
+                <input ng-model="usuario.password"type="password" placeholder="Senha" name="password" required >
+                 <span style="color:red" ng-show="myForm.password.$error.required">
+  						 Password is required.
+  					  </span>
+            </label>
+            
+              <input type="submit" value="Entrar" class="button button-outline button-block">
+        </form>
+        
+      <!--<button ng-click="goToPage()"class="button  button-outline button-block ">Entrar</button>      -->
+        
+        <div class="spacer" style="width: 100%; height: 30%;"></div>
+        <a class ="center" href="#" ng-click="newUser()" style="text-decoration:none; color: white; position: absolute; left: 50%; "/>Cadastrar no Simply Chat</a>
+
+    </ion-content>
+</ion-view>
